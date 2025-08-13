@@ -1,0 +1,256 @@
+/* App.css */
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.App-header {
+  padding: 2rem;
+  color: white;
+}
+
+.App-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+}
+
+.App-main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.loading {
+  color: white;
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+
+/* Login */
+.login-container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.login-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btn-google, .btn-github {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-google {
+  background: #4285f4;
+  color: white;
+}
+
+.btn-github {
+  background: #333;
+  color: white;
+}
+
+.btn-google:hover, .btn-github:hover {
+  transform: translateY(-2px);
+}
+
+/* User section */
+.user-section {
+  margin-bottom: 2rem;
+}
+
+.user-welcome {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Status Wall */
+.status-wall {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  min-height: 200px;
+}
+
+.status-wall.empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+}
+
+.connection-status {
+  text-align: right;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.current-status {
+  text-align: left;
+}
+
+.status-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.author-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.author-info {
+  flex: 1;
+}
+
+.author-name {
+  display: block;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.provider-badge {
+  display: inline-block;
+  background: #f0f0f0;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.timestamp {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.status-message {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Status Form */
+.status-form {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.status-input {
+  width: 100%;
+  min-height: 120px;
+  padding: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  margin-bottom: 1rem;
+}
+
+.status-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.char-counter {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.char-counter.warning {
+  color: #e74c3c;
+}
+
+.submit-btn {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* .submit-btn:hover:not(:disabled) {
+  background: #5a67d8;
+}
+
+.submit-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+} */
+
+@media (max-width: 768px) {
+  .App-main {
+    padding: 1rem;
+  }
+  
+  .login-buttons {
+    flex-direction: column;
+  }
+  
+  .status-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
